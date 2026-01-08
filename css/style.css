@@ -204,6 +204,8 @@ body {
     width: 151px;
     height: 206px;
     background: url(../img/main_3D_egg.png) no-repeat;
+    cursor: pointer;
+    cursor : url(../img/mouse_click.png) 10 10, auto;
 }
 .egg:hover{
     background: url(../img/main_3D_egg_hover.png) no-repeat;
@@ -418,6 +420,8 @@ body {
     width: 151px;
     height: 206px;
     background: url(../img/main_3D_pig.png) no-repeat;
+    cursor: pointer;
+    cursor : url(../img/mouse_click.png) 10 10, auto;
 }
 .pig:hover{
     background: url(../img/main_3D_pig_hover.png) no-repeat;
@@ -476,6 +480,8 @@ body {
     width: 151px;
     height: 206px;
     background: url(../img/main_3D_carrot.png) no-repeat;
+    cursor: pointer;
+    cursor : url(../img/mouse_click.png) 10 10, auto;
 }
 .carrot:hover{
     width: 151px;
@@ -535,6 +541,8 @@ body {
     width: 151px;
     height: 206px;
     background: url(../img/main_3D_potato.png) no-repeat;
+    cursor: pointer;
+    cursor : url(../img/mouse_click.png) 10 10, auto;
 }
 .potato:hover{
     width: 151px;
