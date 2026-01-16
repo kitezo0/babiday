@@ -1,0 +1,607 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    font-family: 'NanumSquareNeo', 'RixInuaridurine';
+    font-size: 16px;
+    line-height: 24px;
+    color: #402e32;
+    background-color: #FFF6EC;
+    cursor : url(../img/mouse_standard.png) 10 10, auto;
+}
+
+#wrap_wrap{
+    min-width: 1400px;
+    overflow: hidden;
+}
+
+/* header */
+#header_wrap {
+    height: 100px;
+    background-color: #fff6ec;
+}
+.header {
+    width: 1320px;
+    height: 100px;
+    margin: 0 auto;
+    display: flex;
+    box-sizing: border-box;
+    position: relative;
+    /* background-color: yellow; */
+}
+.header h1 {
+    padding-top: 15px;
+    display: block;
+    margin-right: 50px;
+}
+.header h1 a{
+    cursor : url(../img/mouse_click.png) 16 16, auto;
+}
+.gnb {
+    display: flex;
+}
+.gnb>li>a {
+    display: block;
+    font-weight: 900;
+    padding: 45px 40px 31px;
+    transition: transform 0.5s;
+    cursor : url(../img/mouse_click.png) 16 16, auto;
+    /* background-color: yellowgreen; */
+}
+.gnb>li>.hover1:hover {
+    color: #ff9122;
+    transition: transform 0.5s;
+    transform: translateY(10px);
+    background: url(../img/header_hover_1.png) no-repeat center 0;
+}
+.gnb>li>.hover2:hover {
+    color: #ff9122;
+    transition: transform 0.5s;
+    transform: translateY(10px);
+    background: url(../img/header_hover_2.png) no-repeat center 0;
+}
+.gnb>li>.hover3:hover {
+    color: #ff9122;
+    transition: transform 0.5s;
+    transform: translateY(10px);
+    background: url(../img/header_hover_3.png) no-repeat center 0;
+}
+.gnb>li>.hover4:hover {
+    color: #ff9122;
+    transition: transform 0.5s;
+    transform: translateY(10px);
+    background: url(../img/header_hover_4.png) no-repeat center 0;
+}
+.util {
+    display: flex;
+    position: absolute;
+    top: 24px;
+    right: 0;
+}
+.cart{
+    cursor : url(../img/mouse_click.png) 16 16, auto;
+    background: url(../img/header_cart.png) no-repeat 19px 7px;
+}
+.cart:hover{
+    background: url(../img/header_cart_hover.png) no-repeat 19px 7px;
+}
+.login{
+    cursor : url(../img/mouse_click.png) 16 16, auto;
+    background: url(../img/header_login.png) no-repeat 27px 7px;
+}
+.login:hover{
+    background: url(../img/header_login_hover.png) no-repeat 27px 7px;
+}
+.util>li>a {
+    display: block;
+    font-weight: 900;
+    color: #9A9389;
+    padding: 35px 15px 0;
+    transition: all 0.5s;
+}
+
+.util>li>a:hover {
+    color: #402e32;
+    transform: translateY(-2px);
+    transition: all 0.5s;
+}
+
+/* banner */
+#banner{
+    margin: 0 auto;
+    /* background: url(../img/product_main_banner.jpg) no-repeat center; */
+}
+#banner img{
+    display: block;
+    width: 100%;
+}
+
+/* 추천 제품 */
+#recommend_product{
+    width: 1320px;
+    margin: 215px auto 250px;
+}
+.title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+.title h2{
+    font-size: 36px;
+    font-weight: 800;
+}
+
+#news{
+    width: 1320px;
+    height: 500px;
+    margin: 60px auto 0;
+    position: relative;
+    /* .card 기준 */   
+    /* background-color: yellow; */
+}
+.card{
+    width: 1320px;
+    height: 490px;
+    box-sizing: border-box;
+    padding: 30px 10px 40px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* background-color: wheat; */
+}
+.tag{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 25px 0 15px;
+}
+.card .swiper-slide p{
+    font-size: 16px;
+    font-weight: 700;
+}
+.card .swiper-slide h4{
+    margin-top: 15px;
+    font-size: 24px;
+    font-weight: 800;
+    padding-bottom: 15px;
+}
+.card .swiper-slide{
+    text-align: center;
+    width: 300px;
+    height: 400px;
+    box-sizing: border-box;
+    border-radius: 30px;
+    background-color: #fff;
+    transition: all 0.8s;
+}
+.card .swiper-slide:hover{
+    transform: translateY(-10px);
+    transition: all 0.8s;
+    filter: drop-shadow(5px 5px 10px #a55f0f52);
+}
+.card .swiper-slide a{
+    cursor : url(../img/mouse_click.png) 10 10, auto;
+}
+.lunch1_box{
+    margin-top: -10px;
+}
+.card .swiper-pagination-bullet{
+    width: 20px;
+    height: 20px;
+    background-color: transparent;
+    border-radius: 0;
+    background-image: url(../img/title_icon.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    cursor : url(../img/mouse_click.png) 10 10, auto;
+}
+
+
+/* 볶음밥 */
+#fried{
+    width: 1320px;
+    margin: 250px auto;
+}
+
+#fried_product{
+    width: 1320px;
+    height: 600px;
+    margin: 80px auto;
+    position: relative;
+    /* .card 기준 */   
+    /* background-color: yellow; */
+}
+.card2{
+    width: 1320px;
+    height: 637px;
+    box-sizing: border-box;
+    padding: 30px 10px 40px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* background-color: wheat; */
+    /* cursor : url(../img/mouse_left.png) 16 16, auto;  */
+}
+.card2 .swiper-slide{
+    text-align: center;
+    width: 420px;
+    height: 550px;
+    box-sizing: border-box;
+    border-radius: 30px;
+    position: relative;
+    background-color: #fff;
+    transition: all 0.7s;
+}
+.card2 .swiper-slide:hover{
+    transform: scale(1.04);
+    transition: all 0.7s;
+    background-color: #fffce0;
+    filter: drop-shadow(0 0 4px #ff902277);
+}
+.heart{
+    width: 35px;
+    height: 31px;
+    background: url(../img/product_heart.png) no-repeat;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+}
+.heart:hover{
+    width: 35px;
+    height: 31px;
+    background: url(../img/product_heart_hover.png) no-repeat;
+}
+.fried_box{
+    margin-top: 75px;
+}
+.card2 .swiper-slide a{
+    cursor : url(../img/mouse_click.png) 16 16, auto;
+}
+.card2 .swiper-slide p{
+    font-size: 14px;
+    margin-top: 40px;
+}
+.card2 .swiper-slide h4{
+    margin-top: 15px;
+    font-size: 28px; 
+    font-weight: 700;
+    padding-bottom: 20px;
+}
+.card2 .swiper-slide h5{
+    display: inline-block;
+    font-size: 20px; 
+    font-weight: 800;
+    color: #fff;
+    background-color: #ff9122;
+    border-radius: 50px;
+    padding: 6px 18px 5px;
+}
+.card2 .swiper-pagination-bullet{
+    width: 20px;
+    height: 20px;
+    background-color: transparent;
+    border-radius: 0;
+    background-image: url(../img/title_icon.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    cursor : url(../img/mouse_click.png) 10 10, auto;
+}
+
+/* 비빔밥 */
+#bibim{
+    width: 1320px;
+    margin: 250px auto;
+}
+
+#bibim_product{
+    width: 1320px;
+    height: 600px;
+    margin: 80px auto;
+    position: relative;
+    /* .card 기준 */   
+    /* background-color: yellow; */
+}
+.card3{
+    width: 1320px;
+    height: 637px;
+    box-sizing: border-box;
+    padding: 30px 10px 40px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* background-color: wheat; */
+    /* cursor : url(../img/mouse_left.png) 16 16, auto;  */
+}
+.card3 .swiper-slide{
+    text-align: center;
+    width: 420px;
+    height: 550px;
+    box-sizing: border-box;
+    border-radius: 30px;
+    position: relative;
+    background-color: #fff;
+    transition: all 0.7s;
+}
+.card3 .swiper-slide:hover{
+    transform: scale(1.04);
+    transition: all 0.7s;
+    background-color: #fbffe1;
+    filter: drop-shadow(0 0 4px #6bd11877);
+}
+.heart{
+    width: 35px;
+    height: 31px;
+    background: url(../img/product_heart.png) no-repeat;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+}
+.heart:hover{
+    width: 35px;
+    height: 31px;
+    background: url(../img/product_heart_hover.png) no-repeat;
+}
+.bibim_box{
+    margin-top: 75px;
+}
+.card3 .swiper-slide a{
+    cursor : url(../img/mouse_click.png) 16 16, auto;
+}
+.card3 .swiper-slide p{
+    font-size: 14px;
+    margin-top: 40px;
+}
+.card3 .swiper-slide h4{
+    margin-top: 15px;
+    font-size: 28px; 
+    font-weight: 700;
+    padding-bottom: 20px;
+}
+.card3 .swiper-slide h5{
+    display: inline-block;
+    font-size: 20px; 
+    font-weight: 800;
+    color: #fff;
+    background-color: #ff9122;
+    border-radius: 50px;
+    padding: 6px 18px 5px;
+}
+.card3 .swiper-pagination-bullet{
+    width: 20px;
+    height: 20px;
+    background-color: transparent;
+    border-radius: 0;
+    background-image: url(../img/title_icon.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    cursor : url(../img/mouse_click.png) 10 10, auto;
+}
+
+/* 덮밥 */
+#bowl{
+    width: 1320px;
+    margin: 0 auto 300px;
+}
+
+#bowl_product{
+    width: 1320px;
+    height: 600px;
+    margin: 80px auto;
+    position: relative;
+    /* .card 기준 */   
+    /* background-color: yellow; */
+}
+.card4{
+    width: 1320px;
+    height: 637px;
+    box-sizing: border-box;
+    padding: 30px 10px 40px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* background-color: wheat; */
+    /* cursor : url(../img/mouse_left.png) 16 16, auto;  */
+}
+.card4 .swiper-slide{
+    text-align: center;
+    width: 420px;
+    height: 550px;
+    box-sizing: border-box;
+    border-radius: 30px;
+    position: relative;
+    background-color: #fff;
+    transition: all 0.7s;
+}
+.card4 .swiper-slide:hover{
+    transform: scale(1.04);
+    transition: all 0.7s;
+    background-color: #fff2e5;
+    filter: drop-shadow(0 0 4px #ff682277);
+}
+.heart{
+    width: 35px;
+    height: 31px;
+    background: url(../img/product_heart.png) no-repeat;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+}
+.heart:hover{
+    width: 35px;
+    height: 31px;
+    background: url(../img/product_heart_hover.png) no-repeat;
+}
+.card4 .swiper-slide p{
+    font-size: 14px;
+    margin-top: 20px;
+}
+.card4 .swiper-slide h4{
+    margin-top: 15px;
+    font-size: 28px; 
+    font-weight: 700;
+    padding-bottom: 20px;
+}
+.card4 .swiper-slide h5{
+    display: inline-block;
+    font-size: 20px; 
+    font-weight: 800;
+    color: #fff;
+    background-color: #ff9122;
+    border-radius: 50px;
+    padding: 6px 18px 5px;
+}
+.bowl_box{
+    margin-top: 30px;
+}
+.bowl_box2{
+    margin-top: 45px;
+}
+.card4 .swiper-slide a{
+    cursor : url(../img/mouse_click.png) 16 16, auto;
+}
+.card4 .swiper-pagination-bullet{
+    width: 20px;
+    height: 20px;
+    background-color: transparent;
+    border-radius: 0;
+    background-image: url(../img/title_icon.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    cursor : url(../img/mouse_click.png) 10 10, auto;
+}
+
+
+/* 서브 배너 */
+#sub_banner{
+    width: 1320px;
+    margin: 0 auto 250px;
+    display: flex;
+    justify-content: space-between;
+}
+#sub_banner img:nth-child(1){
+    transition: all 0.5s;
+    animation: sub_banner 0.8s linear infinite alternate;
+    cursor: pointer;
+    cursor : url(../img/mouse_click.png) 10 10, auto;
+}
+#sub_banner img:nth-child(2){
+    transition: all 0.5s;
+    animation: sub_banner 0.8s linear infinite alternate-reverse;
+    cursor: pointer;
+    cursor : url(../img/mouse_click.png) 10 10, auto;
+}
+#sub_banner img:nth-child(1):hover{
+    filter: drop-shadow(10px 10px 0 #2f991575);
+    transition: all 0.5s;
+}
+#sub_banner img:nth-child(2):hover{
+    transition: all 0.5s;
+    filter: drop-shadow(10px 10px 0 #ff902275);
+}
+
+@keyframes sub_banner{
+    0%{
+        transform: translateY(0);
+    }
+    100%{
+        transform: translateY(8px);
+    }
+}
+
+
+/* footer */
+#footer_wrap{
+    height: 400px;
+    background-color: #ff9122;
+}
+.footer{
+    width: 1320px;
+    height: 400px;
+    margin: 0 auto;
+    padding-top: 30px;
+    box-sizing: border-box;
+    position: relative;
+    /* 푸터의 기준 */
+    background: url(../img/footer_3D_rice.png) no-repeat right 60px top 150px ;
+}
+.footer_link{
+    display: flex;
+}
+.footer_link li a{
+    display: block;
+    color: #fff;
+    font-weight: 700;
+    margin-right: 50px;
+    cursor : url(../img/mouse_click.png) 16 16, auto; 
+}
+.footer_link li a:hover{
+    color: #402e32;
+}
+.footer_inner h1 a{
+    cursor : url(../img/mouse_click.png) 16 16, auto;
+}
+.footer_inner{
+    margin-top: 50px;
+    display: flex;
+}
+.footer_inner_text{
+    margin-left: 80px;
+}
+.footer_inner_text li{
+    color: #fff;
+    line-height: 30px;
+}
+
+.sns{
+    display: flex;
+    gap: 20px;
+    position: absolute;
+    top: 23px;
+    right: 20px;
+}
+.sns li a{
+    opacity: 0.7;
+    cursor : url(../img/mouse_click.png) 16 16, auto;
+}
+.sns li a:hover{
+    opacity: 1;
+}
+
+
+/* top버튼 */
+.top_button{
+    display: inline-block;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    animation: topbutton 1.2s infinite linear alternate;
+}
+.top_button a{
+    cursor : url(../img/mouse_click.png) 16 16, auto;
+}
+.top_button img{
+    width: 90%;
+}
+
+@keyframes topbutton{
+    0%{
+        transform: translateY(5px);
+    }
+    100%{
+        transform: translateY(-5px);
+    }
+}

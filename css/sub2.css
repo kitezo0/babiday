@@ -1,0 +1,751 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    font-family: 'NanumSquareNeo', 'RixInuaridurine';
+    font-size: 16px;
+    line-height: 24px;
+    color: #402e32;
+    background-color: #FFF6EC;
+    cursor : url(../img/mouse_standard.png) 10 10, auto;
+}
+
+#wrap_wrap{
+    min-width: 1400px;
+    overflow: hidden;
+}
+
+/* header */
+#header_wrap {
+    height: 100px;
+    background-color: #fff6ec;
+}
+.header {
+    width: 1320px;
+    height: 100px;
+    margin: 0 auto;
+    display: flex;
+    box-sizing: border-box;
+    position: relative;
+    /* background-color: yellow; */
+}
+.header h1 {
+    padding-top: 15px;
+    display: block;
+    margin-right: 50px;
+}
+.header h1 a{
+    cursor : url(../img/mouse_click.png) 16 16, auto;
+}
+.gnb {
+    display: flex;
+}
+.gnb>li>a {
+    display: block;
+    font-weight: 900;
+    padding: 45px 40px 31px;
+    transition: transform 0.5s;
+    cursor : url(../img/mouse_click.png) 16 16, auto;
+    /* background-color: yellowgreen; */
+}
+.gnb>li>.hover1:hover {
+    color: #ff9122;
+    transition: transform 0.5s;
+    transform: translateY(10px);
+    background: url(../img/header_hover_1.png) no-repeat center 0;
+}
+.gnb>li>.hover2:hover {
+    color: #ff9122;
+    transition: transform 0.5s;
+    transform: translateY(10px);
+    background: url(../img/header_hover_2.png) no-repeat center 0;
+}
+.gnb>li>.hover3:hover {
+    color: #ff9122;
+    transition: transform 0.5s;
+    transform: translateY(10px);
+    background: url(../img/header_hover_3.png) no-repeat center 0;
+}
+.gnb>li>.hover4:hover {
+    color: #ff9122;
+    transition: transform 0.5s;
+    transform: translateY(10px);
+    background: url(../img/header_hover_4.png) no-repeat center 0;
+}
+.util {
+    display: flex;
+    position: absolute;
+    top: 24px;
+    right: 0;
+}
+.cart{
+    cursor : url(../img/mouse_click.png) 16 16, auto;
+    background: url(../img/header_cart.png) no-repeat 19px 7px;
+}
+.cart:hover{
+    background: url(../img/header_cart_hover.png) no-repeat 19px 7px;
+}
+.login{
+    cursor : url(../img/mouse_click.png) 16 16, auto;
+    background: url(../img/header_login.png) no-repeat 27px 7px;
+}
+.login:hover{
+    background: url(../img/header_login_hover.png) no-repeat 27px 7px;
+}
+.util>li>a {
+    display: block;
+    font-weight: 900;
+    color: #9A9389;
+    padding: 35px 15px 0;
+    transition: all 0.5s;
+}
+
+.util>li>a:hover {
+    color: #402e32;
+    transform: translateY(-2px);
+    transition: all 0.5s;
+}
+
+/* banner */
+#banner{
+    margin: 0 auto;
+    /* background: url(../img/character_main_banner.jpg) no-repeat center; */
+}
+#banner img{
+    display: block;
+    width: 100%;
+}
+
+/* main character */
+#main_character{
+    width: 1320px;
+    margin: 215px auto 250px;
+}
+.title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+.title h2{
+    font-weight: 800;
+    font-size: 36px;
+}
+.title_wrap p{
+    text-align: center;
+    margin-top: 30px;
+    font-size: 24px;
+    line-height: 40px;
+    margin-bottom: 150px;
+}
+.title_wrap span{
+    font-weight: 800;
+    color: #ff9912;
+}
+
+.main{
+    position: relative;
+    /* 마우스 이미지 호버 이미지 기준 */
+}
+.main h3{
+    display: inline-block;
+    font-size: 36px;
+    color: #ff9912;
+    font-weight: 800;
+    border: 3px solid #ff9912;
+    border-radius: 50px;
+    padding: 15px 30px;
+    background-color: #fff;
+    margin-bottom: 20px;
+}
+.main ul li{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+.main ul li p{
+    font-size: 20px;
+}
+.border{
+    display: inline-block;
+    background-color: #ff9912;
+    padding: 10px 20px;
+    border-radius: 50px;
+    color: #fff;
+    font-weight: 800;
+}
+
+.character{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    cursor: pointer;
+    cursor : url(../img/mouse_click.png) 10 10, auto;
+}
+.character li:nth-child(1) div{
+    width: 400px;
+    height: 580px;
+    background: url(../img/character_main_front.png);
+    transition: transform 0.2s ease;
+}
+.character li:nth-child(1):hover div{
+    width: 400px;
+    height: 580px;
+    background: url(../img/character_main_front_hover.png) no-repeat;
+    transition: transform 0.2s ease;
+}
+.character li:nth-child(2) div{
+    width: 400px;
+    height: 580px;
+    background: url(../img/character_main_left.png);
+    transition: transform 0.2s ease;
+}
+.character li:nth-child(2):hover div{
+    width: 400px;
+    height: 580px;
+    background: url(../img/character_main_left_hover.png) no-repeat;
+    transition: transform 0.2s ease;
+}
+.character li:nth-child(3) div{
+    width: 400px;
+    height: 580px;
+    background: url(../img/character_main_back.png);
+    transition: transform 0.2s ease;
+}
+.character li:nth-child(3):hover div{
+    width: 400px;
+    height: 580px;
+    background: url(../img/character_main_back_hover.png) no-repeat;
+    transition: transform 0.2s ease;
+}
+.mouse img{
+    position: absolute;
+    top: 180px;
+    right: -100px;
+    animation: mouse_ani 0.8s infinite linear alternate;
+    filter: drop-shadow(0 0 5px #6b3d0931)
+}
+
+@keyframes mouse_ani{
+    0%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(1.1);
+    }
+}
+
+
+/* sub character */
+#sub_character{
+    width: 1320px;
+    margin: 0 auto 265px;
+    /* background-color: yellowgreen; */
+}
+
+/* 당근 */
+.carrot_wrap{
+    margin-top: 200px;
+    position: relative;
+}
+.bubble{
+    position: absolute;
+    top: -10px;
+    left: -60px;
+    animation: mouse_ani2 0.8s alternate linear infinite;
+}
+@keyframes mouse_ani2{
+    0%{
+        transform: rotate(-2deg);
+    }
+    100%{
+        transform: rotate(5deg);
+    }
+}
+.carrot{
+    display: flex;
+    gap: 60px;
+}
+.carrot img{
+    display: block;
+}
+.carrot li:nth-child(1), .carrot li:nth-child(2){
+    width: 300px;
+    height: 400px;
+    box-sizing: border-box;
+    background-color: #fff;
+    border-radius: 30px;
+    cursor: pointer;
+    cursor : url(../img/mouse_click.png) 10 10, auto;
+}
+.carrot li:nth-child(1){
+    width: 300px;
+    height: 400px;
+    background: url(../img/character_carrot_1.png) no-repeat;
+    transition: transform 0.3s ease;
+}
+.carrot li:nth-child(1):hover{
+    width: 300px;
+    height: 400px;
+    background: url(../img/character_carrot_1_hover.png) no-repeat;
+    transition: transform 0.3s ease;
+    filter: drop-shadow(0 0 5px #ff90228e);
+    transform: translateY(-10px);
+}
+.carrot li:nth-child(2){
+    width: 300px;
+    height: 400px;
+    background: url(../img/character_carrot_2.png) no-repeat;
+    transition: transform 0.3s ease;
+}
+.carrot li:nth-child(2):hover{
+    width: 300px;
+    height: 400px;
+    background: url(../img/character_carrot_2_hover.png) no-repeat;
+    transition: transform 0.3s ease;
+    filter: drop-shadow(0 0 5px #ff90228e);
+    transform: translateY(-10px);
+}
+.carrot h3{
+    display: inline-block;
+    font-size: 36px;
+    color: #ff9912;
+    font-weight: 800;
+    border: 3px solid #ff9912;
+    border-radius: 50px;
+    padding: 15px 30px;
+    background-color: #fff;
+    margin: 55px 0 25px;
+}
+.carrot p{
+    font-size: 20px;
+    font-weight: 700;
+}
+.carrot .border{
+    font-weight: 800;
+}
+.text1, .text2, .text3{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    gap: 20px;
+}
+.text1 p, .text2 p, .text3 p{
+    font-size: 20px;
+}
+
+
+/* 감자 */
+.potato_wrap{
+    margin-top: 200px;
+}
+.potato{
+    display: flex;
+    gap: 60px;
+}
+.potato img{
+    display: block;
+}
+.potato li:nth-child(2), .potato li:nth-child(3){
+    width: 300px;
+    height: 400px;
+    box-sizing: border-box;
+    background-color: #fff;
+    border-radius: 30px;
+    cursor: pointer;
+    cursor : url(../img/mouse_click.png) 10 10, auto;
+}
+.potato li:nth-child(2){
+    width: 300px;
+    height: 400px;
+    background: url(../img/character_potato_1.png) no-repeat;
+    transition: transform 0.3s ease;
+}
+.potato li:nth-child(2):hover{
+    width: 300px;
+    height: 400px;
+    background: url(../img/character_potato_1_hover.png) no-repeat;
+    transition: transform 0.3s ease;
+    filter: drop-shadow(0 0 5px #ad62168e);
+    transform: translateY(-10px);
+}
+.potato li:nth-child(3){
+    width: 300px;
+    height: 400px;
+    background: url(../img/character_potato_2.png) no-repeat;
+    transition: transform 0.3s ease;
+}
+.potato li:nth-child(3):hover{
+    width: 300px;
+    height: 400px;
+    background: url(../img/character_potato_2_hover.png) no-repeat;
+    transition: transform 0.3s ease;
+    filter: drop-shadow(0 0 5px #ad62168e);
+    transform: translateY(-10px);
+}
+.potato li h3{
+    display: inline-block;
+    font-size: 36px;
+    color: #ff9912;
+    font-weight: 800;
+    border: 3px solid #ff9912;
+    border-radius: 50px;
+    padding: 15px 30px;
+    background-color: #fff;
+    margin: 55px 0 25px;
+}
+.potato p{
+    font-size: 20px;
+    font-weight: 700;
+}
+.potato .border{
+    font-weight: 800;
+}
+
+/* 계란 */
+.egg_wrap{
+    margin-top: 200px;
+}
+.egg{
+    display: flex;
+    gap: 60px;
+}
+.egg img{
+    display: block;
+}
+.egg li:nth-child(1){
+    width: 300px;
+    height: 400px;
+    background: url(../img/character_egg_1.png) no-repeat;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    cursor : url(../img/mouse_click.png) 10 10, auto;
+}
+.egg li:nth-child(1):hover{
+    width: 300px;
+    height: 400px;
+    background: url(../img/character_egg_1_hover.png) no-repeat;
+    transition: transform 0.3s ease;
+    filter: drop-shadow(0 0 5px #ffd69f);
+    transform: translateY(-10px);
+}
+.egg li:nth-child(2){
+    width: 300px;
+    height: 400px;
+    background: url(../img/character_egg_2.png) no-repeat;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    cursor : url(../img/mouse_click.png) 10 10, auto;
+}
+.egg li:nth-child(2):hover{
+    width: 300px;
+    height: 400px;
+    background: url(../img/character_egg_2_hover.png) no-repeat;
+    transition: transform 0.3s ease;
+    filter: drop-shadow(0 0 5px #ffd69f);
+    transform: translateY(-10px);
+}
+.egg h3{
+    display: inline-block;
+    font-size: 36px;
+    color: #ff9912;
+    font-weight: 800;
+    border: 3px solid #ff9912;
+    border-radius: 50px;
+    padding: 15px 30px;
+    background-color: #fff;
+    margin: 55px 0 25px;
+}
+.egg p{
+    font-size: 20px;
+    font-weight: 700;
+}
+.egg .border{
+    font-weight: 800;
+}
+
+/* remainder */
+#another{
+    width: 1320px;
+    margin: 0 auto 250px;
+}
+.another_title{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 50px;
+}
+.another_title h4{
+    font-weight: 800;
+    font-size: 32px;
+}
+.another_in{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 37px;
+}
+.another_in div{
+    width: 302px;
+    height: 352px;
+    cursor: pointer;
+    cursor : url(../img/mouse_click.png) 10 10, auto;
+}
+.another_in div:nth-child(1){
+    background: url(../img/character_sub_1.png) no-repeat center;
+    transition: transform 0.3s ease;
+}
+.another_in div:nth-child(1):hover{
+    background: url(../img/character_sub_1_hover.png) no-repeat center;
+    transition: transform 0.3s ease;
+    transform: scale(0.97);
+    filter: drop-shadow(0 0 7px #ff901285);
+}
+.another_in div:nth-child(2){
+    background: url(../img/character_sub_2.png) no-repeat center;
+    transition: transform 0.3s ease;
+}
+.another_in div:nth-child(2):hover{
+    background: url(../img/character_sub_2_hover.png) no-repeat center;
+    transition: transform 0.3s ease;
+    transform: scale(0.97);
+    filter: drop-shadow(0 0 7px #ff901285);
+}
+.another_in div:nth-child(3){
+    background: url(../img/character_sub_3.png) no-repeat center;
+    transition: transform 0.3s ease;
+}
+.another_in div:nth-child(3):hover{
+    background: url(../img/character_sub_3_hover.png) no-repeat center;
+    transition: transform 0.3s ease;
+    transform: scale(0.97);
+    filter: drop-shadow(0 0 7px #ff901285);
+}
+.another_in div:nth-child(4){
+    background: url(../img/character_sub_4.png) no-repeat center;
+    transition: transform 0.3s ease;
+}
+.another_in div:nth-child(4):hover{
+    background: url(../img/character_sub_4_hover.png) no-repeat center;
+    transition: transform 0.3s ease;
+    transform: scale(0.97);
+    filter: drop-shadow(0 0 7px #ff901285);
+}
+.another_in div:nth-child(5){
+    background: url(../img/character_sub_5.png) no-repeat center;
+    transition: transform 0.3s ease;
+}
+.another_in div:nth-child(5):hover{
+    background: url(../img/character_sub_5_hover.png) no-repeat center;
+    transition: transform 0.3s ease;
+    transform: scale(0.97);
+    filter: drop-shadow(0 0 7px #ff901285);
+}
+.another_in div:nth-child(6){
+    background: url(../img/character_sub_6.png) no-repeat center;
+    transition: transform 0.3s ease;
+}
+.another_in div:nth-child(6):hover{
+    background: url(../img/character_sub_6_hover.png) no-repeat center;
+    transition: transform 0.3s ease;
+    transform: scale(0.97);
+    filter: drop-shadow(0 0 7px #ff901285);
+}
+.another_in div:nth-child(7){
+    background: url(../img/character_sub_7.png) no-repeat center;
+    transition: transform 0.3s ease;
+}
+.another_in div:nth-child(7):hover{
+    background: url(../img/character_sub_7_hover.png) no-repeat center;
+    transition: transform 0.3s ease;
+    transform: scale(0.97);
+    filter: drop-shadow(0 0 7px #ff901285);
+}
+.another_in div:nth-child(8){
+    background: url(../img/character_sub_8.png) no-repeat center;
+    transition: transform 0.3s ease;
+}
+.another_in div:nth-child(8):hover{
+    background: url(../img/character_sub_8_hover.png) no-repeat center;
+    transition: transform 0.3s ease;
+    transform: scale(0.97);
+    filter: drop-shadow(0 0 7px #ff901285);
+}
+.another_in div:nth-child(9){
+    background: url(../img/character_sub_9.png) no-repeat center;
+    transition: transform 0.3s ease;
+}
+.another_in div:nth-child(9):hover{
+    background: url(../img/character_sub_9_hover.png) no-repeat center;
+    transition: transform 0.3s ease;
+    transform: scale(0.97);
+    filter: drop-shadow(0 0 7px #ff901285);
+}
+.another_in div:nth-child(10){
+    background: url(../img/character_sub_10.png) no-repeat center;
+    transition: transform 0.3s ease;
+}
+.another_in div:nth-child(10):hover{
+    background: url(../img/character_sub_10_hover.png) no-repeat center;
+    transition: transform 0.3s ease;
+    transform: scale(0.97);
+    filter: drop-shadow(0 0 7px #ff901285);
+}
+.another_in div:nth-child(11){
+    background: url(../img/character_sub_11.png) no-repeat center;
+    transition: transform 0.3s ease;
+}
+.another_in div:nth-child(11):hover{
+    background: url(../img/character_sub_11_hover.png) no-repeat center;
+    transition: transform 0.3s ease;
+    transform: scale(0.97);
+    filter: drop-shadow(0 0 7px #ff901285);
+}
+.another_in div:nth-child(12){
+    background: url(../img/character_sub_12.png) no-repeat center;
+    transition: transform 0.3s ease;
+}
+.another_in div:nth-child(12):hover{
+    background: url(../img/character_sub_12_hover.png) no-repeat center;
+    transition: transform 0.3s ease;
+    transform: scale(0.97);
+    filter: drop-shadow(0 0 7px #ff901285);
+}
+.another_in div:nth-child(13){
+    background: url(../img/character_sub_13.png) no-repeat center;
+    transition: transform 0.3s ease;
+}
+.another_in div:nth-child(13):hover{
+    background: url(../img/character_sub_13_hover.png) no-repeat center;
+    transition: transform 0.3s ease;
+    transform: scale(0.97);
+    filter: drop-shadow(0 0 7px #ff901285);
+}
+.another_in div:nth-child(14){
+    background: url(../img/character_sub_14.png) no-repeat center;
+    transition: transform 0.3s ease;
+}
+.another_in div:nth-child(14):hover{
+    background: url(../img/character_sub_14_hover.png) no-repeat center;
+    transition: transform 0.3s ease;
+    transform: scale(0.97);
+    filter: drop-shadow(0 0 7px #ff901285);
+}
+.another_in div:nth-child(15){
+    background: url(../img/character_sub_15.png) no-repeat center;
+    transition: transform 0.3s ease;
+}
+.another_in div:nth-child(15):hover{
+    background: url(../img/character_sub_15_hover.png) no-repeat center;
+    transition: transform 0.3s ease;
+    transform: scale(0.97);
+    filter: drop-shadow(0 0 7px #ff901285);
+}
+.another_in div:nth-child(16){
+    background: url(../img/character_sub_16.png) no-repeat center;
+    transition: transform 0.3s ease;
+}
+.another_in div:nth-child(16):hover{
+    background: url(../img/character_sub_16_hover.png) no-repeat center;
+    transition: transform 0.3s ease;
+    transform: scale(0.97);
+    filter: drop-shadow(0 0 7px #ff901285);
+}
+
+/* footer */
+#footer_wrap{
+    height: 400px;
+    background-color: #ff9122;
+}
+.footer{
+    width: 1320px;
+    height: 400px;
+    margin: 0 auto;
+    padding-top: 30px;
+    box-sizing: border-box;
+    position: relative;
+    /* 푸터의 기준 */
+    background: url(../img/footer_3D_rice.png) no-repeat right 60px top 150px ;
+}
+.footer_link{
+    display: flex;
+}
+.footer_link li a{
+    display: block;
+    color: #fff;
+    font-weight: 700;
+    margin-right: 50px;
+    cursor : url(../img/mouse_click.png) 16 16, auto; 
+}
+.footer_link li a:hover{
+    color: #402e32;
+}
+.footer_inner{
+    margin-top: 50px;
+    display: flex;
+}
+.footer_inner h1 a{
+    cursor : url(../img/mouse_click.png) 16 16, auto;
+}
+.footer_inner_text{
+    margin-left: 80px;
+}
+.footer_inner_text li{
+    color: #fff;
+    line-height: 30px;
+}
+
+.sns{
+    display: flex;
+    gap: 20px;
+    position: absolute;
+    top: 23px;
+    right: 20px;
+}
+.sns li a{
+    opacity: 0.7;
+    cursor : url(../img/mouse_click.png) 16 16, auto;
+}
+.sns li a:hover{
+    opacity: 1;
+}
+
+
+/* top버튼 */
+.top_button{
+    display: inline-block;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    animation: topbutton 1.2s infinite linear alternate;
+}
+.top_button a{
+    cursor : url(../img/mouse_click.png) 16 16, auto;
+}
+.top_button img{
+    width: 90%;
+}
+
+@keyframes topbutton{
+    0%{
+        transform: translateY(5px);
+    }
+    100%{
+        transform: translateY(-5px);
+    }
+}

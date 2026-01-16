@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1400px">
+    <title>바비데이</title>
+    <!-- 파비콘 연결 -->
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon_32x32.png">
+    <!-- font 연결 -->
+    <link rel="stylesheet" href="./css/font.css">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+    <!-- product swiper -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <!-- aos 연결 -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- 내 css 연결 -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <!-- header -->
+    <div id="header_wrap"> <!-- 배경색 / 높이 -->
+        <div class="header"> <!-- 가운데 / 너비 / 높이 -->
+            <h1>
+                <a href="./index.html">
+                    <img src="./img/header_logo_1.png" alt="header_logo">
+                </a>
+            </h1>
+            <ul class="gnb"> <!-- ★ 추후 서브링크 추가 ★-->
+                <li><a class="hover1" href="./sub/sub1.html">BRAND</a></li>
+                <li><a class="hover2" href="./sub/sub2.html">CHARACTER</a></li>
+                <li><a class="hover3" href="./sub/sub3.html">PRODUCT</a></li>
+                <li><a class="hover4" href="./sub/sub4.html">COMMUNITY</a></li>
+            </ul>
+            <ul class="util">
+                <li><a class="cart" href="#none">Cart</a></li>
+                <li><a class="login" href="#none">Login</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- header - end-->
+
+    <!-- main_banner -->
+    <div id="banner">
+        <div class="swiper mySwiper1">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="./img/main_banner_1.jpg" alt="main_banner">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./img/main_banner_2.jpg" alt="main_banner">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./img/main_banner_3.jpg" alt="main_banner">
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+    <!-- main_banner -end -->
+
+    <!-- brand -->
+    <div id="brand" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000">
+        <img src="./img/brand_logo_1.png" alt="brand_logo">
+        <h4>"좋은 하루는 좋은 한 끼에서 시작됩니다."</h4>
+        <p>
+            <span>‘오늘 뭐 먹지?’</span> 그 고민 하나로 시작했습니다. <br>
+            누구나 부담 없이 즐길 수 있는 따뜻한 한 끼에 대한 고민. <br>
+            간편함 속에서 든든함까지 놓치지 않습니다. <br>
+            당신의 좋은 하루를 위해, <span>바비데이</span>
+        </p>
+        <a href="./sub/sub1.html">브랜드 스토리 →</a>
+    </div>
+    <!-- brand - end -->
+
+    <!-- product -->
+    <!-- 베스트 상품 -->
+    <div id="best_product">
+        <div class="title">
+            <div class="egg"></div>
+            <p>베스트 상품</p>
+        </div>
+
+        <div id="news">
+            <div class="swiper card"><!--swiper는 필수 클래스, 그 옆의 클래스는 보조 클래스-->
+                <div class="swiper-wrapper"><!--swiper-wrapper는 필수 클래스-->
+                    <div class="swiper-slide">
+                        <!--swiper-slide는 필수 클래스-->
+                        <img class="lunch_square" src="./img/main_lunchbox_1.png" alt="lunchbox">
+                        <p>부드러운 참치와 <br> 매콤하고 고소한 고추장의 조화!</p>
+                        <h4>참치비빔밥</h4>
+                    </div>
+                    <div class="swiper-slide">
+                        <img class="lunch_square" src="./img/main_lunchbox_2.png" alt="lunchbox">
+                        <p>담백함과 든든함까지 <br> 동시에 느낄 수 있는</p>
+                        <h4>닭가슴살볶음밥</h4>
+                    </div>
+                    <div class="swiper-slide">
+                        <img class="lunch_square" src="./img/main_lunchbox_3.png" alt="lunchbox">
+                        <p>매콤하게 볶은 김치와 <br> 고슬고슬한 밥이 조화로운</p>
+                        <h4>김치볶음밥</h4>
+                    </div>
+                    <div class="swiper-slide">
+                        <img class="lunch_circle" src="./img/main_lunchbox_4.png" alt="lunchbox">
+                        <p>달콤짭조름한 양념에 <br> 구워낸 든든한</p>
+                        <h4>가지구이덮밥</h4>
+                    </div>
+                    <div class="swiper-slide">
+                        <img class="lunch_circle" src="./img/main_lunchbox_5.png" alt="lunchbox">
+                        <p>부드러운 고기와 진한 간장 <br> 양념으로 완성한</p>
+                        <h4>불고기덮밥</h4>
+                    </div>
+                    <div class="swiper-slide">
+                        <img class="lunch_circle" src="./img/main_lunchbox_6.png" alt="lunchbox">
+                        <p>부드러운 두부와 <br> 매콤한 풍미를 담은</p>
+                        <h4>마파두부덮밥</h4>
+                    </div>
+                </div>
+
+                <!--도트를 추가하고 싶을때-->
+                <div class="swiper-pagination"></div>
+            </div><!--mb E-->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div><!--news-->
+    </div>
+
+    <!-- 메인 제품 바로가기-->
+    <div class="top">
+        <div id="main_product_wrap">
+            <div class="main_product">
+                <div class="product_text">
+                    <img src="./img/product_logo_1.png" alt="product_logo">
+                    <p>
+                        따뜻한 밥이 있는 하루, <br>
+                        바비데이만의 집밥을 지금 바로 느껴보세요!
+                    </p>
+                    <a href="./sub/sub3.html">제품 바로가기 →</a>
+                </div>
+            </div>
+
+            <div id="product_slide">
+                <div id="slide1">
+                    <div class="slide_inner1">
+                        <ul>
+                            <li><img src="./img/product_square_1.png" alt="슬라이드 이미지"></li>
+                            <li><img src="./img/product_square_10.png" alt="슬라이드 이미지"></li>
+                            <li><img src="./img/product_square_3.png" alt="슬라이드 이미지"></li>
+                            <li><img src="./img/product_square_4.png" alt="슬라이드 이미지"></li>
+                            <li><img src="./img/product_square_6.png" alt="슬라이드 이미지"></li>
+                            <li><img src="./img/product_square_8.png" alt="슬라이드 이미지"></li>
+                            <li><img src="./img/product_square_11.png" alt="슬라이드 이미지"></li>
+                            <li><img src="./img/product_square_9.png" alt="슬라이드 이미지"></li>
+                        </ul>
+                        <ul>
+                            <li><img src="./img/product_square_1.png" alt="슬라이드 이미지"></li>
+                            <li><img src="./img/product_square_10.png" alt="슬라이드 이미지"></li>
+                            <li><img src="./img/product_square_3.png" alt="슬라이드 이미지"></li>
+                            <li><img src="./img/product_square_4.png" alt="슬라이드 이미지"></li>
+                            <li><img src="./img/product_square_6.png" alt="슬라이드 이미지"></li>
+                            <li><img src="./img/product_square_8.png" alt="슬라이드 이미지"></li>
+                            <li><img src="./img/product_square_11.png" alt="슬라이드 이미지"></li>
+                            <li><img src="./img/product_square_9.png" alt="슬라이드 이미지"></li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="slide2">
+                    <div class="slide_inner2">
+                        <ul>
+                            <li><img src="./img/product_circle_1.png" alt="슬라이드 이미지"></li>
+                            <li><img src="./img/product_circle_2.png" alt="슬라이드 이미지"></li>
+                            <li><img src="./img/product_circle_3.png" alt="슬라이드 이미지"></li>
+                            <li><img src="./img/product_circle_4.png" alt="슬라이드 이미지"></li>
+                            <li><img src="./img/product_circle_5.png" alt="슬라이드 이미지"></li>
+                        </ul>
+                        <ul>
+                            <li><img src="./img/product_circle_1.png" alt="슬라이드 이미지"></li>
+                            <li><img src="./img/product_circle_2.png" alt="슬라이드 이미지"></li>
+                            <li><img src="./img/product_circle_3.png" alt="슬라이드 이미지"></li>
+                            <li><img src="./img/product_circle_4.png" alt="슬라이드 이미지"></li>
+                            <li><img src="./img/product_circle_5.png" alt="슬라이드 이미지"></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- product - end-->
+
+    <!-- 이벤트 -->
+    <div id="event">
+        <div class="title">
+            <div class="pig"></div>
+            <p>이벤트</p>
+        </div>
+
+        <ul class="event_banner">
+            <li>
+                <a href="./sub/sub4.html"> <!-- ★ 추후 서브링크 추가 ★-->
+                    <img src="./img/main_event_banner_1.png" alt="event">
+                    <h3>Welcome 2026! 새해맞이 할인 이벤트</h3>
+                    <p>2025.12.10 ~ 2026.01.14</p>
+                </a>
+            </li>
+            <li>
+                <a href="./sub/sub4.html"> <!-- ★ 추후 서브링크 추가 ★-->
+                    <img src="./img/main_event_banner_2.png" alt="event">
+                    <h3>올해의 리뷰왕! 리뷰쓰고 상품받자! 리뷰 이벤트</h3>
+                    <p>2025.12.15 ~ 2025.12.29</p>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <!-- 중간 배송 배너 -->
+    <div id="middle_banner">
+        <a href="./sub/sub4.html">
+            <img src="./img/main_sub_banner_1.png" alt="sub_banner">
+        </a>
+    </div>
+
+    <!-- 상품 구매 후기 -->
+    <div id="review">
+        <div class="title">
+            <div class="carrot"></div>
+            <p class="carrot_p">상품 구매 후기</p>
+        </div>
+
+        <ul class="review_img">
+            <li>
+                <a href="#none">
+                    <img src="./img/review_curry.png" alt="앞">
+                    <img class="back" src="./img/review_curry_hover.png" alt="뒤">
+                </a>
+            </li>
+            <li>
+                <a href="#none">
+                    <img src="./img/review_kimchi.png" alt="앞">
+                    <img class="back" src="./img/review_kimchi_hover.png" alt="뒤">
+                </a>
+            </li>
+            <li>
+                <a href="#none">
+                    <img src="./img/review_tofu.png" alt="앞">
+                    <img class="back" src="./img/review_tofu_hover.png" alt="뒤">
+                </a>
+            </li>
+            <li>
+                <a href="#none">
+                    <img src="./img/review_pork.png" alt="앞">
+                    <img class="back" src="./img/review_pork_hover.png" alt="뒤">
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <!-- 인스타그램 -->
+    <div id="insta_wrap">
+        <div class="insta">
+            <div class="title">
+                <div class="potato"></div>
+                <p class="potato_p">인스타그램</p>
+            </div>
+
+            <div id="slide">
+                <div class="slide_inner">
+                    <ul>
+                        <li><a href="#none"><img src="./img/instargram_1.png" alt="insta"></a></li>
+                        <li><a href="#none"><img src="./img/instargram_2.png" alt="insta"></a></li>
+                        <li><a href="#none"><img src="./img/instargram_3.png" alt="insta"></a></li>
+                        <li><a href="#none"><img src="./img/instargram_4.png" alt="insta"></a></li>
+                        <li><a href="#none"><img src="./img/instargram_5.png" alt="insta"></a></li>
+                        <li><a href="#none"><img src="./img/instargram_6.png" alt="insta"></a></li>
+                        <li><a href="#none"><img src="./img/instargram_7.png" alt="insta"></a></li>
+                        <li><a href="#none"><img src="./img/instargram_8.png" alt="insta"></a></li>
+                        <li><a href="#none"><img src="./img/instargram_9.png" alt="insta"></a></li>
+                        <li><a href="#none"><img src="./img/instargram_10.png" alt="insta"></a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#none"><img src="./img/instargram_1.png" alt="insta"></a></li>
+                        <li><a href="#none"><img src="./img/instargram_2.png" alt="insta"></a></li>
+                        <li><a href="#none"><img src="./img/instargram_3.png" alt="insta"></a></li>
+                        <li><a href="#none"><img src="./img/instargram_4.png" alt="insta"></a></li>
+                        <li><a href="#none"><img src="./img/instargram_5.png" alt="insta"></a></li>
+                        <li><a href="#none"><img src="./img/instargram_6.png" alt="insta"></a></li>
+                        <li><a href="#none"><img src="./img/instargram_7.png" alt="insta"></a></li>
+                        <li><a href="#none"><img src="./img/instargram_8.png" alt="insta"></a></li>
+                        <li><a href="#none"><img src="./img/instargram_9.png" alt="insta"></a></li>
+                        <li><a href="#none"><img src="./img/instargram_10.png" alt="insta"></a></li>
+                    </ul>
+                </div>
+                <!--slid_inner E-->
+            </div>
+            <!--slide E-->
+        </div>
+    </div>
+
+    <!-- footer -->
+    <div id="footer_wrap">
+        <div class="footer">
+            <ul class="footer_link">
+                <li><a href="#none">개인정보처리방침</a></li>
+                <li><a href="#none">이용약관</a></li>
+                <li><a href="#none">이메일무단수집거부</a></li>
+            </ul>
+
+            <div class="footer_inner">
+                <h1><a href="./index.html">
+                        <img src="./img/footer_logo_1.png" alt="footer_logo">
+                    </a></h1>
+                <ul class="footer_inner_text">
+                    <li>상호명 : (주)바비데이</li>
+                    <li>대표이사 : 이연주</li>
+                    <li>사업자등록번호 : 306-91-000519</li>
+                    <li>주소 : 부산 중구 중앙대로</li>
+                    <li>운영시간 : 평일 9시 - 18시 (주말/공휴일 제외)</li>
+                    <li>Copyright @ 2025 바비데이. All Rights Reserved.</li>
+                </ul>
+            </div>
+
+            <ul class="sns">
+                <li><a href="#none">
+                        <img src="./img/footer_facebook_icon.png" alt="icon">
+                    </a></li>
+                <li><a href="#none">
+                        <img src="./img/footer_instargram_icon.png" alt="icon">
+                    </a></li>
+                <li><a href="#none">
+                        <img src="./img/footer_youtube_icon.png" alt="icon">
+                    </a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- footer - end -->
+
+    <!-- top button -->
+    <div class="top_button">
+        <a href="#header_wrap"><img src="./img/top_button.png" alt="top"></a>
+    </div>
+    <!-- top button - end -->
+
+
+
+
+
+    <!-- 다운로드 방식으로 연결한 제이쿼리 -->
+    <script src="./js/jquery-3.7.1.min.js"></script>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- 연결 제이쿼리 -->
+    <script>
+        var swiper = new Swiper(".mySwiper1", {
+            pagination: {
+                el: ".swiper-pagination",
+            },
+            loop: true,
+            speed: 2000,
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+        });
+
+        // product
+        var swiper = new Swiper(".card", {
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },//화살표를 작동하게 하는 옵션.
+            pagination: {
+                el: ".card .swiper-pagination",
+                clickable: true,
+            },//도트부분을 작동하게 하는 옵션.
+            slidesPerView: 3,
+            spaceBetween: 30,
+        });//지우면 안되요!
+    </script>
+
+    <!-- aos js -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>

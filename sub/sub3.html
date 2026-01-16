@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="1400px">
+    <title>바비데이</title>
+    <!-- 파비콘 연결 -->
+    <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon_32x32.png">
+    <!-- font 연결 -->
+    <link rel="stylesheet" href="../css/font.css">
+    <!-- product swiper -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <!-- aos 연결 -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- 내 css 연결 -->
+    <link rel="stylesheet" href="../css/sub3.css">
+</head>
+
+<body>
+    <div id="wrap_wrap">
+        <!-- header -->
+        <div id="header_wrap"> <!-- 배경색 / 높이 -->
+            <div class="header"> <!-- 가운데 / 너비 / 높이 -->
+                <h1>
+                    <a href="../index.html">
+                        <img src="../img/header_logo_1.png" alt="header_logo">
+                    </a>
+                </h1>
+                <ul class="gnb"> <!-- ★ 추후 서브링크 추가 ★-->
+                    <li><a class="hover1" href="./sub1.html">BRAND</a></li>
+                    <li><a class="hover2" href="./sub2.html">CHARACTER</a></li>
+                    <li><a class="hover3" href="./sub3.html">PRODUCT</a></li>
+                    <li><a class="hover4" href="./sub4.html">COMMUNITY</a></li>
+                </ul>
+                <ul class="util">
+                    <li><a class="cart" href="#none">Cart</a></li>
+                    <li><a class="login" href="#none">Login</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- header - end-->
+
+        <!-- banner -->
+        <div id="banner">
+            <img src="../img/product_main_banner.jpg" alt="product_main_banner">
+        </div>
+        <!-- banner - end -->
+
+        <!-- 추천 제품 -->
+        <div id="recommend_product">
+            <div class="title_wrap"> <!-- data-aos="fade-down" data-aos-duration="1000" -->
+                <div class="title">
+                    <img src="../img/title_icon.png" alt="title_icon">
+                    <h2>이달의 추천 제품</h2>
+                    <img src="../img/title_icon.png" alt="title_icon">
+                </div>
+            </div>
+
+            <div id="news">
+                <div class="swiper card"> <!--swiper는 필수 클래스, 그 옆의 클래스는 보조 -->
+                    <div class="swiper-wrapper"> <!--swiper-wrapper는 필수 클래스-->
+                        <div class="swiper-slide"> <!--swiper-slide는 필수 클래스-->
+                            <div class="tag">
+                                <img src="../img/product_title_hot.png" alt="tag">
+                                <img src="../img/product_title_new.png" alt="tag">
+                                <img src="../img/product_title_best.png" alt="tag">
+                            </div>
+                            <a href="#bibim">
+                                <img class="lunch_box" src="../img/product__recom_bibim_1.png" alt="lunchbox">
+                                <h4>낙지비빔밥</h4>
+                                <p>8,700원</p>
+                            </a>
+                        </div>
+                        <div class="swiper-slide"> <!--swiper-slide는 필수 클래스-->
+                            <div class="tag">
+                                <img src="../img/product_title_hot.png" alt="tag">
+                                <img src="../img/product_title_new.png" alt="tag">
+                                <img src="../img/product_title_best.png" alt="tag">
+                            </div>
+                            <a href="#bibim">
+                                <img class="lunch_box" src="../img/product__recom_bibim_2.png" alt="lunchbox">
+                                <h4>참치비빔밥</h4>
+                                <p>8,300원</p>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="tag">
+                                <img src="../img/product_title_hot.png" alt="tag">
+                                <img src="../img/product_title_new.png" alt="tag">
+                                <img src="../img/product_title_best.png" alt="tag">
+                            </div>
+                            <a href="#bowl">
+                                <img class="lunch1_box" src="../img/product__recom_bowl_1.png" alt="lunchbox">
+                                <h4>마파두부덮밥</h4>
+                                <p>7,700원</p>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="tag">
+                                <img src="../img/product_title_hot.png" alt="tag">
+                                <img src="../img/product_title_best.png" alt="tag">
+                            </div>
+                            <a href="#fried">
+                                <img class="lunch_box" src="../img/product__recom_fried_1.png" alt="lunchbox">
+                                <h4>김치볶음밥</h4>
+                                <p>7,700원</p>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="tag">
+                                <img src="../img/product_title_hot.png" alt="tag">
+                                <img src="../img/product_title_best.png" alt="tag">
+                            </div>
+                            <a href="#fried">
+                                <img class="lunch_box" src="../img/product__recom_fried_2.png" alt="lunchbox">
+                                <h4>닭가슴살볶음밥</h4>
+                                <p>7,800원</p>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="tag">
+                                <img src="../img/product_title_hot.png" alt="tag">
+                                <img src="../img/product_title_best.png" alt="tag">
+                            </div>
+                            <a href="#bowl">
+                                <img class="lunch1_box" src="../img/product__recom_bowl_2.png" alt="lunchbox">
+                                <h4>매콤제육덮밥</h4>
+                                <p>8,300원</p>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!--도트를 추가하고 싶을때-->
+                    <div class="swiper-pagination"></div>
+                </div><!--mb E-->
+            </div><!--news-->
+        </div>
+        <!-- 추천 제품 - end -->
+
+        <!-- 볶음밥 -->
+        <div id="fried">
+            <img src="../img/product_sub_title_1.png" alt="product_sub">
+
+            <div id="fried_product">
+                <div class="swiper card2"> <!--swiper는 필수 클래스, 그 옆의 클래스는 보조 -->
+                    <div class="swiper-wrapper"> <!--swiper-wrapper는 필수 클래스-->
+                        <div class="swiper-slide"> <!--swiper-slide는 필수 클래스-->
+                            <a href="#none">
+                                <div class="heart"></div>
+                                <img class="fried_box" src="../img/product_fried_1.png" alt="fried_box">
+                                <p>매콤하게 볶은 김치와 고슬고슬한 밥이 조화로운</p>
+                                <h4>김치볶음밥</h4>
+                                <h5>7,700원</h5>
+                            </a>
+                        </div>
+                        <div class="swiper-slide"> <!--swiper-slide는 필수 클래스-->
+                            <a href="#none">
+                                <div class="heart"></div>
+                                <img class="fried_box" src="../img/product_fried_2.png" alt="fried_box">
+                                <p>담백한 계란을 밥과 함께 부드럽게 볶아낸</p>
+                                <h4>계란볶음밥</h4>
+                                <h5>7,600원</h5>
+                            </a>
+                        </div>
+                        <div class="swiper-slide"> <!--swiper-slide는 필수 클래스-->
+                            <a href="#none">
+                                <div class="heart"></div>
+                                <img class="fried_box" src="../img/product_fried_3.png" alt="fried_box">
+                                <p>담백함과 든든함까지 동시에 느낄 수 있는</p>
+                                <h4>닭가슴살볶음밥</h4>
+                                <h5>7,800원</h5>
+                            </a>
+                        </div>
+                        <div class="swiper-slide"> <!--swiper-slide는 필수 클래스-->
+                            <a href="#none">
+                                <div class="heart"></div>
+                                <img class="fried_box" src="../img/product_fried_4.png" alt="fried_box">
+                                <p>짜지않아 더 맛있는 소세지와 각종 야채의 만남!</p>
+                                <h4>소세지볶음밥</h4>
+                                <h5>7,700원</h5>
+                            </a>
+                        </div>
+                        <div class="swiper-slide"> <!--swiper-slide는 필수 클래스-->
+                            <a href="#none">
+                                <div class="heart"></div>
+                                <img class="fried_box" src="../img/product_fried_5.png" alt="fried_box">
+                                <p>신선한 채소를 가득! 부담없이 즐길 수 있는</p>
+                                <h4>야채볶음밥</h4>
+                                <h5>7,500원</h5>
+                            </a>
+                        </div>
+                        <div class="swiper-slide"> <!--swiper-slide는 필수 클래스-->
+                            <a href="#none">
+                                <div class="heart"></div>
+                                <img class="fried_box" src="../img/product_fried_6.png" alt="fried_box">
+                                <p>짭짤함과 고소함의 조화! 깊은 풍미의</p>
+                                <h4>베이컨볶음밥</h4>
+                                <h5>7,900원</h5>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </div>
+        <!-- 볶음밥 - end-->
+
+        <!-- 비빔밥 -->
+        <div id="bibim">
+            <img src="../img/product_sub_title_2.png" alt="product_sub">
+
+            <div id="bibim_product">
+                <div class="swiper card3"> <!--swiper는 필수 클래스, 그 옆의 클래스는 보조 -->
+                    <div class="swiper-wrapper"> <!--swiper-wrapper는 필수 클래스-->
+                        <div class="swiper-slide"> <!--swiper-slide는 필수 클래스-->
+                            <a href="#none">
+                                <div class="heart"></div>
+                                <img class="bibim_box" src="../img/product_bibim_1.png" alt="bibim_box">
+                                <p>담백한 소고기와 신선한 야채를 듬뿍 담아 든든한</p>
+                                <h4>소고기비빔밥</h4>
+                                <h5>8,800원</h5>
+                            </a>
+                        </div>
+                        <div class="swiper-slide"> <!--swiper-slide는 필수 클래스-->
+                            <a href="#none">
+                                <div class="heart"></div>
+                                <img class="bibim_box" src="../img/product_bibim_2.png" alt="bibim_box">
+                                <p>다채로운 채소와 고소한 고추장이 조화로운</p>
+                                <h4>야채비빔밥</h4>
+                                <h5>8,200원</h5>
+                            </a>
+                        </div>
+                        <div class="swiper-slide"> <!--swiper-slide는 필수 클래스-->
+                            <a href="#none">
+                                <div class="heart"></div>
+                                <img class="bibim_box" src="../img/product_bibim_3.png" alt="bibim_box">
+                                <p>부드러운 참치와 매콤하고 고소한 고추장의 조화!</p>
+                                <h4>참치비빔밥</h4>
+                                <h5>8,300원</h5>
+                            </a>
+                        </div>
+                        <div class="swiper-slide"> <!--swiper-slide는 필수 클래스-->
+                            <a href="#none">
+                                <div class="heart"></div>
+                                <img class="bibim_box" src="../img/product_bibim_4.png" alt="bibim_box">
+                                <p>매콤한 양념의 낙지와 야채들의 알싸한 만남!</p>
+                                <h4>낙지비빔밥</h4>
+                                <h5>8,700원</h5>
+                            </a>
+                        </div>
+                        <div class="swiper-slide"> <!--swiper-slide는 필수 클래스-->
+                            <a href="#none">
+                                <div class="heart"></div>
+                                <img class="bibim_box" src="../img/product_bibim_5.png" alt="bibim_box">
+                                <p>부드러운 두부로 속은 편하게, 맛은 알차게</p>
+                                <h4>두부비빔밥</h4>
+                                <h5>8,000원</h5>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </div>
+        <!-- 비빔밥 - end-->
+
+        <!-- 덮밥 -->
+        <div id="bowl">
+            <img src="../img/product_sub_title_3.png" alt="product_sub">
+
+            <div id="bowl_product">
+                <div class="swiper card4"> <!--swiper는 필수 클래스, 그 옆의 클래스는 보조 -->
+                    <div class="swiper-wrapper"> <!--swiper-wrapper는 필수 클래스-->
+                        <div class="swiper-slide"> <!--swiper-slide는 필수 클래스-->
+                            <a href="#none">
+                                <div class="heart"></div>
+                                <img class="bowl_box" src="../img/product_bowl_1.png" alt="bowl_box">
+                                <p>부드러운 고기와 진한 간장 양념으로 완성한</p>
+                                <h4>불고기덮밥</h4>
+                                <h5>8,000원</h5>
+                            </a>
+                        </div>
+                        <div class="swiper-slide"> <!--swiper-slide는 필수 클래스-->
+                            <a href="#none">
+                                <div class="heart"></div>
+                                <img class="bowl_box" src="../img/product_bowl_2.png" alt="bowl_box">
+                                <p>부드러운 두부와 매콤한 풍미를 담은</p>
+                                <h4>마파두부덮밥</h4>
+                                <h5>7,700원</h5>
+                            </a>
+                        </div>
+                        <div class="swiper-slide"> <!--swiper-slide는 필수 클래스-->
+                            <a href="#none">
+                                <div class="heart"></div>
+                                <img class="bowl_box" src="../img/product_bowl_3.png" alt="bowl_box">
+                                <p>달콤짭조름한 양념에 구워낸 든든한</p>
+                                <h4>돼지고기덮밥</h4>
+                                <h5>8,000원</h5>
+                            </a>
+                        </div>
+                        <div class="swiper-slide"> <!--swiper-slide는 필수 클래스-->
+                            <a href="#none">
+                                <div class="heart"></div>
+                                <img class="bowl_box" src="../img/product_bowl_4.png" alt="bowl_box">
+                                <p>달큰한 양념에 한 번 조려 더 부드러운</p>
+                                <h4>가지구이덮밥</h4>
+                                <h5>7,800원</h5>
+                            </a>
+                        </div>
+                        <div class="swiper-slide"> <!--swiper-slide는 필수 클래스-->
+                            <a href="#none">
+                                <div class="heart"></div>
+                                <img class="bowl_box" src="../img/product_bowl_5.png" alt="bowl_box">
+                                <p>알싸한 매운맛이 킥! 매콤함의 끝판왕</p>
+                                <h4>매콤제육덮밥</h4>
+                                <h5>8,300원</h5>
+                            </a>
+                        </div>
+                        <div class="swiper-slide"> <!--swiper-slide는 필수 클래스-->
+                            <a href="#none">
+                                <div class="heart"></div>
+                                <img class="bowl_box2" src="../img/product_bowl_6.png" alt="bowl_box">
+                                <p>진하고 향긋한 카레의 풍미를 담은 든든한</p>
+                                <h4>카레라이스</h4>
+                                <h5>6,000원</h5>
+                            </a>
+                        </div>
+                        <div class="swiper-slide"> <!--swiper-slide는 필수 클래스-->
+                            <a href="#none">
+                                <div class="heart"></div>
+                                <img class="bowl_box2" src="../img/product_bowl_7.png" alt="bowl_box">
+                                <p>깊고 부드러운 짜장의 풍미를 담은</p>
+                                <h4>유니짜장밥</h4>
+                                <h5>6,000원</h5>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </div>
+        <!-- 덮밥 - end-->
+
+        <!-- 서브 배너 -->
+        <div id="sub_banner">
+            <img src="../img/product_sub_banner_1.png" alt="sub_banner">
+            <img src="../img/product_sub_banner_2.png" alt="sub_banner">
+        </div>
+        <!-- 서브 배너 - end -->
+
+        <!-- footer -->
+        <div id="footer_wrap">
+            <div class="footer">
+                <ul class="footer_link">
+                    <li><a href="#none">개인정보처리방침</a></li>
+                    <li><a href="#none">이용약관</a></li>
+                    <li><a href="#none">이메일무단수집거부</a></li>
+                </ul>
+
+                <div class="footer_inner">
+                    <h1>
+                        <a href="../index.html">
+                            <img src="../img/footer_logo_1.png" alt="footer_logo">
+                        </a>
+                    </h1>
+                    <ul class="footer_inner_text">
+                        <li>상호명 : (주)바비데이</li>
+                        <li>대표이사 : 이연주</li>
+                        <li>사업자등록번호 : 306-91-000519</li>
+                        <li>주소 : 부산 중구 중앙대로</li>
+                        <li>운영시간 : 평일 9시 - 18시 (주말/공휴일 제외)</li>
+                        <li>Copyright @ 2025 바비데이. All Rights Reserved.</li>
+                    </ul>
+                </div>
+
+                <ul class="sns">
+                    <li>
+                        <a href="#none">
+                            <img src="../img/footer_facebook_icon.png" alt="icon">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#none">
+                            <img src="../img/footer_instargram_icon.png" alt="icon">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#none">
+                            <img src="../img/footer_youtube_icon.png" alt="icon">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- footer - end -->
+
+        <!-- top button -->
+        <div class="top_button">
+            <a href="#header_wrap"><img src="../img/top_button.png" alt="top"></a>
+        </div>
+        <!-- top button - end -->
+    </div>
+
+
+
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <script>
+        var swiper = new Swiper(".card", {
+            pagination: {
+                el: ".card .swiper-pagination",
+                clickable: true,
+                dynamicBullets: true,
+                dynamicMainBullets: 1,
+            },//도트부분을 작동하게 하는 옵션.
+            slidesPerView: 4,
+            spaceBetween: 30,
+            loop: true,
+            speed: 2000,
+            autoplay: {
+                delay: 1500,
+                disableOnInteraction: false,
+            },
+        });//지우면 안되요!
+
+        var swiper = new Swiper(".card2", {
+            navigation: {
+                nextEl: ".card2 .swiper-button-next",
+                prevEl: ".card2 .swiper-button-prev",
+            },//화살표를 작동하게 하는 옵션.
+            pagination: {
+                el: ".card2 .swiper-pagination",
+                clickable: true,
+                // dynamicBullets: true,
+            },//도트부분을 작동하게 하는 옵션.
+            slidesPerView: 3,
+            spaceBetween: 30,
+            speed: 2000,
+            loop: true,
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+        });//지우면 안되요!
+
+        var swiper = new Swiper(".card3", {
+            navigation: {
+                nextEl: ".card3 .swiper-button-next",
+                prevEl: ".card3 .swiper-button-prev",
+            },//화살표를 작동하게 하는 옵션.
+            pagination: {
+                el: ".card3 .swiper-pagination",
+                clickable: true,
+                // dynamicBullets: true,
+            },//도트부분을 작동하게 하는 옵션.
+            slidesPerView: 3,
+            spaceBetween: 30,
+            speed: 2000,
+            loop: true,
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+        });//지우면 안되요!
+
+        var swiper = new Swiper(".card4", {
+            navigation: {
+                nextEl: ".card4 .swiper-button-next",
+                prevEl: ".card4 .swiper-button-prev",
+            },//화살표를 작동하게 하는 옵션.
+            pagination: {
+                el: ".card4 .swiper-pagination",
+                clickable: true,
+                // dynamicBullets: true,
+            },//도트부분을 작동하게 하는 옵션.
+            slidesPerView: 3,
+            spaceBetween: 30,
+            speed: 2000,
+            loop: true,
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+        });//지우면 안되요!
+    </script>
+
+    <!-- aos js -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
